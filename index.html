@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>crystals game!</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Macondo|Spirax" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+    integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/css/mdb.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/" class="">
+
+</head>
+
+<body background ="../images/background.png">
+
+  <!-- Banner  -->
+  <div class="container-fluid p-2 mb-0">
+    <div class="row">
+      <div class="col m-1">
+      
+      </div>
+    </div>
+
+    <!--Instructions -->
+
+    <div class="row mt-2">
+      <div class="col-2">
+      </div>
+
+      <div class="col-8 instructions border border-light p-4 hoverable">
+        <p>
+          <h3>Here's how you play the game</h3>
+        </p>
+        <p>
+          <ul>
+      <li>You will be given a random number at the start of the game.<span>"Number To Get"</span></li>
+			<li>There are four crystals below.</li>
+          </ul>
+				<li id="blue">Blue</li>
+				<li id="green">Green</li>
+				<li id="red">Red</li>
+				<li id="yellow">Yellow</li>
+        </p>
+        <p>
+          <br> So of course, down the hatch it goes.
+          <br>
+          By clicking on a crystal, you will add a specific amount of points to your total score.<br>
+          You win the game by matching your total score to the random number.<br>
+          You lose the game if your total score goes above the random number.<br>
+          The value of each crystal is hidden from you until you click on it.<br>
+          Each time when the game starts, the game will change the values of each crystal.
+        </p>
+        
+      </div>
+      <div class="col-2">
+      </div>
+    </div>
+
+    <!--Start-->
+    <div class="start container-fluid mt-3">
+      <div class="row justify-content-center">
+        <button id="start" class="btn btn-lg btn-dark-green border border-dark">Start</button>
+      </div>
+    </div>
+
+    <!--Game-->
+    <div id="game" class="">
+
+      <!--Goal -->
+      <div class="row mt-2">
+        <div class="col-4">
+        </div>
+        <div class="col-4">
+          <div id="goal" class="hoverable p-3 z-depth-3">(Goal Number)</div>
+        </div>
+        <div class="col-4">
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="row justify-content-center m-2 p-3">
+        <div class="col">
+        </div>
+        <div class="col-6 text-center border border-dark p-3 black animated tada">
+          <ul class="col list-inline">
+            <li class="list-inline-item animated fadeIn">
+              <button class="btn berry hoverable z-depth-3" id="berry1"></button>
+            </li>
+            <li class="list-inline-item animated fadeIn">
+              <button class="btn berry hoverable z-depth-3" id="berry2">
+              </button>
+            </li>
+            <li class="list-inline-item animated fadeIn">
+              <button class="btn berry hoverable z-depth-3" id="berry3">
+              </button>
+            </li>
+            <li class="list-inline-item animated fadeIn">
+              <button class="btn berry hoverable z-depth-3" id="berry4"></button>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+        </div>
+
+        <!--Current Number-->
+
+        <div class="col-3 hoverable z-depth-3 p-3" id="current-number">
+        </div>
+
+        <div class="col-2">
+        </div>
+      </div>
+      <br>
+      <br>
+
+
+      <!-- Wins and Losses -->
+      <div class="row m-2 justify-content-center">
+        <div
+          class="col-8 p-3 text-center text-white font-weight-bold hoverable z-depth-3 border border-light blue-gradient"
+          id="stats">
+          (Wins and Losses)
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Footer-->
+  <footer
+    class="jumbotron-fluid justify-content-center text-center mt-4 elegant-color-dark mb-0 text-white p-4 border border-light border-left-0 border-right-0 border-bottom-0">
+    <div class="col">&copy; Copyright</div>
+  </footer>
+
+  <!--Scripts-->
+  <script src="https://use.fontawesome.com/e75d8c103f.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+    integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+    integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/js/mdb.min.js"></script>
+  <script src="assets/javascript/crystal.js"></script>
+</body>
+
+</html>
